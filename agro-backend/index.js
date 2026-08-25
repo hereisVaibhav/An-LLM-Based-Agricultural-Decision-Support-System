@@ -75,13 +75,50 @@ Schema:
 }`;
 
 const YIELD_SYSTEM_PROMPT = `You are an expert agricultural economist AI. Respond with ONLY a valid JSON object.
+
+CRITICAL PRICING RULES:
+1. All financial figures (market value, costs, profit) MUST be in the LOCAL CURRENCY of the specified country/region.
+2. Use real-world, current-year market price benchmarks for that specific region. Examples:
+   - India: Use INR (₹). Reference APMC mandi prices, government MSP (Minimum Support Price) rates, or state agricultural marketing board data. Differentiate between states (e.g., Pune APMC vs Delhi Azadpur mandi vs Punjab grain markets).
+   - USA: Use USD ($). Reference USDA National Agricultural Statistics Service commodity prices. Differentiate between states (e.g., Iowa corn belt vs California specialty crops).
+   - China: Use CNY (¥). Reference Ministry of Agriculture data.
+   - Brazil: Use BRL (R$). Reference CONAB (National Supply Company) data.
+   - Other countries: Use respective local currency and cite the national agricultural pricing authority.
+3. If a specific state/region is given, use that region's local market rates — NOT national averages.
+4. Always cite the pricing source in the "priceSource" field.
+
+YIELD ESTIMATION RULES:
+1. Use your knowledge of regional agricultural statistics, soil conditions, climate, and standard farming practices to estimate crop yield PER ACRE for the given crop and region.
+2. CRITICAL: Yield per acre is an intrinsic agronomic property of the crop+region+climate combination. It does NOT change with farm size. A 3-acre wheat farm in Punjab and a 15-acre wheat farm in Punjab both produce the SAME yield per acre (approximately 2 Tons/Acre). The TOTAL yield scales linearly: estimatedTons = yieldPerAcre × farmSizeAcres.
+3. First determine the correct yield per acre for the crop+region, then multiply by farmSizeAcres to get estimatedTons. Do NOT let the farm size influence your per-acre estimate.
+4. Base your estimate on publicly available government agricultural data (e.g., USDA NASS, India Ministry of Agriculture, CONAB Brazil, UK DEFRA, FAO). Do NOT fabricate unrealistic yields.
+5. The "yieldPerAcre" field must be a string like "X.XX Tons/Acre". The "estimatedTons" field must equal yieldPerAcre × farmSizeAcres.
+
 Schema:
 {
   "plant": "string",
   "farmSizeAcres": number,
+  "location": {
+    "country": "string",
+    "region": "string",
+    "currency": "string",
+    "currencySymbol": "string",
+    "priceSource": "string"
+  },
   "timeline": { "daysToHarvest": number, "stages": ["string"] },
-  "yield": { "estimatedTons": number, "unit": "Tons", "note": "string" },
-  "financials": { "marketValueEstimate": "string", "fertilizerCostEstimate": "string", "profitMargin": "string" },
+  "yield": { "estimatedTons": number, "unit": "Tons", "yieldPerAcre": "string", "note": "string" },
+  "financials": {
+    "pricePerUnit": "string",
+    "priceUnit": "string",
+    "marketValueEstimate": "string",
+    "fertilizerCostEstimate": "string",
+    "laborCostEstimate": "string",
+    "totalCostEstimate": "string",
+    "netProfit": "string",
+    "profitMargin": "string",
+    "roi": "string",
+    "priceSource": "string"
+  },
   "recommendations": ["string"]
 }`;
 
@@ -118,7 +155,8 @@ app.post('/api/predict', async (req, res) => {
 });
 
 app.post('/api/yield', async (req, res) => {
-  const { plant, farmSizeAcres, temperature } = req.body;
+  const { plant, farmSizeAcres, temperature, country, region } = req.body;
+  console.log(`[API] Received yield request: ${plant} in ${region}, ${country} (${farmSizeAcres} acres)`);
   if (!plant || !farmSizeAcres) return res.status(400).json({ error: 'Missing required fields.' });
 
   try {
@@ -126,10 +164,16 @@ app.post('/api/yield', async (req, res) => {
       model: 'gemma-4-26b-a4b-it',
       generationConfig: { responseMimeType: 'application/json' }
     });
-    const userPrompt = `${YIELD_SYSTEM_PROMPT}\n\nPlant: ${plant}\nFarm Size: ${farmSizeAcres} Acres\nCurrent Temp: ${temperature}°C\nPredict yield, timeline, and financials based on typical agricultural data.`;
+    const userPrompt = `${YIELD_SYSTEM_PROMPT}\n\nPlant: ${plant}\nFarm Size: ${farmSizeAcres} Acres\nCurrent Temp: ${temperature}°C\nCountry: ${country || 'India'}\nState/Region: ${region || 'Not specified'}\n\nPredict yield, timeline, and financials using REAL market prices for the specified country and region. All monetary values MUST be in the local currency. Cite your price source in the priceSource field.`;
     
+    console.log(`[API] Querying Gemini model: gemma-4-26b-a4b-it...`);
+    const start = Date.now();
     const result = await model.generateContent(userPrompt);
+    const duration = ((Date.now() - start) / 1000).toFixed(1);
+    console.log(`[API] AI response received in ${duration}s`);
+    
     const parsed = extractJSON(result.response.text());
+    console.log(`[API] Successfully parsed and returned JSON`);
     res.json(parsed);
   } catch (err) {
     console.error('Gemini Error:', err);

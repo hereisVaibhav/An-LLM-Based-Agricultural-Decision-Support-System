@@ -1,0 +1,99 @@
+Crop,Country,Region,Farm Size (Acres),Predicted Yield/Acre (Tons),Actual Yield/Acre (Tons),Absolute Error (Tons),Error (%),Accuracy (%),Ground Truth Source,AI Price Citation
+Banana,India,Tamil Nadu,3,30.0,12.0,18.0,150.0,0.0,NHB India Horticulture Statistics (2023),Agmarknet and regional wholesale market trends for Tamil Nadu
+Banana,India,Tamil Nadu,6,20.0,12.0,8.0,66.67,33.33,NHB India Horticulture Statistics (2023),Agmarknet (TN Mandi wholesale rates)
+Banana,India,Tamil Nadu,9,25.0,12.0,13.0,108.33,0.0,NHB India Horticulture Statistics (2023),Local Mandi Wholesale Price Benchmarks (Tamil Nadu)
+Barley,UK,England,3,1.62,2.6,0.98,37.69,62.31,UK DEFRA Agriculture Statistics (2023),AHDB Cereals Market Data
+Barley,UK,England,6,1.75,2.6,0.85,32.69,67.31,UK DEFRA Agriculture Statistics (2023),AHDB Market Reports
+Barley,UK,England,9,1.7,2.6,0.9,34.62,65.38,UK DEFRA Agriculture Statistics (2023),AHDB Market Benchmarks
+Cassava,Nigeria,Benue State,3,6.0,3.5,2.5,71.43,28.57,FAO FAOSTAT Nigeria (2023),NBS Nigeria Food Price Index
+Cassava,Nigeria,Benue State,6,8.5,3.5,5.0,142.86,0.0,FAO FAOSTAT Nigeria (2023),Benue State local market benchmarks and NBS agricultural reports
+Cassava,Nigeria,Benue State,9,7.5,3.5,4.0,114.29,0.0,FAO FAOSTAT Nigeria (2023),Benue State Commodity Markets and NBS Nigeria
+Chickpea,India,Madhya Pradesh,3,1.0,0.45,0.55,122.22,0.0,India Ministry of Agriculture (2023-24),Current MP Mandi wholesale rates for Chana
+Chickpea,India,Madhya Pradesh,6,1.0,0.45,0.55,122.22,0.0,India Ministry of Agriculture (2023-24),Current Mandi rates for Madhya Pradesh (Indore/Ujjain markets)
+Chickpea,India,Madhya Pradesh,9,1.0,0.45,0.55,122.22,0.0,India Ministry of Agriculture (2023-24),Reference to MSP 2024-25 and regional agricultural input costs in MP
+Cocoa,Ghana,Ashanti Region,3,0.7,0.18,0.52,288.89,0.0,Ghana Cocoa Board (COCOBOD) Annual Report (2023),COCOBOD 2023/2024 Farmgate Price Benchmarks
+Cocoa,Ghana,Ashanti Region,6,0.5,0.18,0.32,177.78,0.0,Ghana Cocoa Board (COCOBOD) Annual Report (2023),COCOBOD (Ghana Cocoa Board) Producer Price Benchmarks
+Cocoa,Ghana,Ashanti Region,9,0.7,0.18,0.52,288.89,0.0,Ghana Cocoa Board (COCOBOD) Annual Report (2023),COCOBOD producer price adjustments and regional input cost benchmarks
+Coffee,Brazil,Minas Gerais,3,0.607,0.65,0.043,6.67,93.33,CONAB Brazil Coffee Report (2023),CEPEA/ESALQ Arabica coffee market benchmarks
+Coffee,Brazil,Minas Gerais,6,1.0,0.65,0.35,53.85,46.15,CONAB Brazil Coffee Report (2023),CEPEA/CONAB Market Price Benchmarks
+Coffee,Brazil,Minas Gerais,9,0.65,0.65,0.0,0.0,100.0,CONAB Brazil Coffee Report (2023),CEPEA/ESALQ Coffee Market Benchmarks
+Corn,USA,Nebraska,3,5.04,4.7,0.34,7.23,92.77,USDA NASS Crop Production Report (2023),USDA NASS and regional Nebraska elevator benchmarks
+Corn,Brazil,Mato Grosso,3,4.5,3.2,1.3,40.62,59.38,CONAB Brazil Crop Bulletin (2023-24),CONAB/CEPEA agricultural market benchmarks
+Corn,USA,Iowa,5,5.04,4.8,0.24,5.0,95.0,USDA NASS Crop Production Report (2023),USDA NASS & Iowa Corn Growers Association
+Corn,USA,Nebraska,6,5.18,4.7,0.48,10.21,89.79,USDA NASS Crop Production Report (2023),USDA National Agricultural Statistics Service and CME Corn Futures
+Corn,Brazil,Mato Grosso,6,4.5,3.2,1.3,40.62,59.38,CONAB Brazil Crop Bulletin (2023-24),CEPEA/CONAB Market Price Benchmarks
+Corn,USA,Nebraska,9,5.04,4.7,0.34,7.23,92.77,USDA NASS Crop Production Report (2023),USDA NASS and CME Group
+Corn,Brazil,Mato Grosso,9,4.5,3.2,1.3,40.62,59.38,CONAB Brazil Crop Bulletin (2023-24),CEPEA Corn Price Index for Mato Grosso region
+Corn,USA,Iowa,10,5.18,4.8,0.38,7.92,92.08,USDA NASS Crop Production Report (2023),Current market benchmark for corn in the US Midwest (CME Group/USDA)
+Corn,USA,Iowa,15,5.04,4.8,0.24,5.0,95.0,USDA NASS Crop Production Report (2023),USDA NASS and CBOT (Chicago Board of Trade) corn futures benchmarks
+Cotton,USA,Georgia,3,1.75,0.5,1.25,250.0,0.0,USDA NASS Cotton Report (2023),Based on USDA Cotton price benchmarks (approx. $0.75/lb converted to metric ton equivalent)
+Cotton,USA,Texas,5,1.7,0.45,1.25,277.78,0.0,USDA NASS Cotton Report (2023),USDA NASS and Texas Cotton Producers market benchmarks
+Cotton,USA,Georgia,6,0.5,0.5,0.0,0.0,100.0,USDA NASS Cotton Report (2023),USDA Cotton Market Benchmarks
+Cotton,USA,Georgia,9,0.45,0.5,0.05,10.0,90.0,USDA NASS Cotton Report (2023),USDA Cotton Price Benchmarks
+Cotton,USA,Texas,10,0.6,0.45,0.15,33.33,66.67,USDA NASS Cotton Report (2023),USDA NASS Commodity Price Reports
+Cotton,USA,Texas,15,1.1,0.45,0.65,144.44,0.0,USDA NASS Cotton Report (2023),USDA NASS Cotton Commodity Price Benchmarks
+Groundnut,India,Gujarat,3,0.85,0.9,0.05,5.56,94.44,India Ministry of Agriculture (2023-24),APMC Gujarat Mandi Rates
+Groundnut,India,Gujarat,6,0.85,0.9,0.05,5.56,94.44,India Ministry of Agriculture (2023-24),Reference to APMC Junagadh/Rajkot market trends
+Groundnut,India,Gujarat,9,0.9,0.9,0.0,0.0,100.0,India Ministry of Agriculture (2023-24),APMC Gujarat Mandi / Gujarat State Agricultural Marketing Board
+Maize,India,Madhya Pradesh,3,1.2,1.1,0.1,9.09,90.91,India Ministry of Agriculture (2023-24),Current APMC Mandi market prices for Madhya Pradesh
+Maize,India,Madhya Pradesh,9,2.5,1.1,1.4,127.27,0.0,India Ministry of Agriculture (2023-24),Agmarknet / MP Mandi Board current market benchmarks
+Millet,India,Rajasthan,5,0.8,0.4,0.4,100.0,0.0,India Ministry of Agriculture (2023-24),Government of India Minimum Support Price (MSP) for 2024-25
+Mustard,India,Rajasthan,3,1.0,0.55,0.45,81.82,18.18,India Ministry of Agriculture (2023-24),Reference based on Rajasthan Mandi rates and government MSP benchmarks for Mustard (Rai/Sarson).
+Mustard,India,Rajasthan,6,0.9,0.55,0.35,63.64,36.36,India Ministry of Agriculture (2023-24),"Current Mandi rates in Rajasthan (e.g., Bharatpur/Alwar) and MSP benchmarks"
+Mustard,India,Rajasthan,9,1.0,0.55,0.45,81.82,18.18,India Ministry of Agriculture (2023-24),Agmarknet and Rajasthan Mandi (APMC) rates
+Onion,India,Nashik,3,12.0,8.0,4.0,50.0,50.0,NHB India Horticulture Statistics (2023),Lasalgaon APMC (Nashik) Market Rates
+Onion,India,Nashik,6,7.0,8.0,1.0,12.5,87.5,NHB India Horticulture Statistics (2023),Nashik APMC market price trends
+Onion,India,Nashik,9,9.0,8.0,1.0,12.5,87.5,NHB India Horticulture Statistics (2023),Current Lasalgaon Mandi market trends
+Palm Oil,Malaysia,Sabah,3,8.1,7.5,0.6,8.0,92.0,MPOB Malaysia Palm Oil Board (2023),MPOB Fresh Fruit Bunch (FFB) Monthly Price Indices
+Palm Oil,Malaysia,Sabah,6,4.0,7.5,3.5,46.67,53.33,MPOB Malaysia Palm Oil Board (2023),MPOB Sabah FFB Market Price Benchmarks
+Palm Oil,Malaysia,Sabah,9,8.5,7.5,1.0,13.33,86.67,MPOB Malaysia Palm Oil Board (2023),MPOB (Malaysian Palm Oil Board) regional FFB price benchmarks
+Potato,India,Uttar Pradesh,3,20.0,10.5,9.5,90.48,9.52,NHB India Horticulture Statistics,Agmarknet / UP Mandi Samiti
+Potato,USA,Idaho,3,40.0,18.0,22.0,122.22,0.0,USDA NASS Potato Summary (2023),USDA NASS / Idaho Potato Commission market data
+Potato,India,Uttar Pradesh,6,20.0,10.5,9.5,90.48,9.52,NHB India Horticulture Statistics,Agmarknet and UP APMC mandi wholesale rates
+Potato,USA,Idaho,6,40.0,18.0,22.0,122.22,0.0,USDA NASS Potato Summary (2023),USDA NASS commodity price benchmarks for Idaho potato markets
+Potato,India,Uttar Pradesh,9,9.5,10.5,1.0,9.52,90.48,NHB India Horticulture Statistics,Agra Mandi Wholesale Benchmarks (Current Season)
+Potato,USA,Idaho,9,40.0,18.0,22.0,122.22,0.0,USDA NASS Potato Summary (2023),USDA NASS and Idaho Potato Commission market reports
+Rice,India,Andhra Pradesh,3,4.0,1.4,2.6,185.71,0.0,India Ministry of Agriculture (2023-24),APMC Mandi Price Benchmarks (Andhra Pradesh)
+Rice,India,West Bengal,5,2.8,1.25,1.55,124.0,0.0,India Ministry of Agriculture (2023-24),Current West Bengal Mandi Paddy Prices (converted to Ton price)
+Rice,India,Andhra Pradesh,6,2.5,1.4,1.1,78.57,21.43,India Ministry of Agriculture (2023-24),Current APMC Mandi rates for medium-grain paddy
+Rice,India,Andhra Pradesh,9,4.0,1.4,2.6,185.71,0.0,India Ministry of Agriculture (2023-24),Regional Mandi benchmarks for Paddy in Andhra Pradesh
+Rice,India,West Bengal,10,2.8,1.25,1.55,124.0,0.0,India Ministry of Agriculture (2023-24),Based on current MSP for Paddy and regional Mandi rates in West Bengal.
+Rice,India,West Bengal,15,2.7,1.25,1.45,116.0,0.0,India Ministry of Agriculture (2023-24),APMC Mandi Price Benchmarks for West Bengal (Paddy)
+Rubber,India,Kerala,3,0.9,0.65,0.25,38.46,61.54,Rubber Board India Annual Statistics (2023),Rubber Board India / Kerala Local Mandi Prices
+Rubber,India,Kerala,6,2.0,0.65,1.35,207.69,0.0,Rubber Board India Annual Statistics (2023),Rubber Board India market rates for RSS (Ribbed Smoked Sheet)
+Rubber,India,Kerala,9,0.73,0.65,0.08,12.31,87.69,Rubber Board India Annual Statistics (2023),Rubber Board India current market trends
+Sorghum,India,Maharashtra,3,1.8,0.4,1.4,350.0,0.0,India Ministry of Agriculture (2023-24),Agmarknet / APMC Maharashtra Mandi Prices
+Sorghum,India,Maharashtra,6,1.8,0.4,1.4,350.0,0.0,India Ministry of Agriculture (2023-24),Current APMC Mandi Price Benchmarks for Maharashtra
+Sorghum,India,Maharashtra,9,1.5,0.4,1.1,275.0,0.0,India Ministry of Agriculture (2023-24),MSAMB APMC Market Data
+Soybeans,USA,Indiana,3,1.65,1.65,0.0,0.0,100.0,USDA NASS Crop Production Report (2023),CME Group Soybean Futures and USDA NASS Regional Pricing
+Soybeans,Brazil,Parana,3,1.5,1.45,0.05,3.45,96.55,CONAB Brazil Crop Bulletin (2023-24),"Current market benchmarks for Paraná, Brazil (converted from 60kg bag prices)"
+Soybeans,USA,Illinois,5,1.65,1.6,0.05,3.12,96.88,USDA NASS Crop Production Report (2023),USDA NASS and regional Illinois market benchmarks
+Soybeans,USA,Indiana,6,1.62,1.65,0.03,1.82,98.18,USDA NASS Crop Production Report (2023),USDA NASS & CBOT current market benchmarks
+Soybeans,Brazil,Parana,6,1.45,1.45,0.0,0.0,100.0,CONAB Brazil Crop Bulletin (2023-24),CEPEA soybean price index (converted from R$/60kg bag to R$/Ton)
+Soybeans,USA,Indiana,9,1.65,1.65,0.0,0.0,100.0,USDA NASS Crop Production Report (2023),USDA National Agricultural Statistics Service (NASS) commodity pricing
+Soybeans,Brazil,Parana,9,1.5,1.45,0.05,3.45,96.55,CONAB Brazil Crop Bulletin (2023-24),CEPEA Soybean Price Index (Parana Market)
+Soybeans,USA,Illinois,10,1.41,1.6,0.19,11.88,88.12,USDA NASS Crop Production Report (2023),USDA National Agricultural Statistics Service / CBOT
+Soybeans,USA,Illinois,15,1.56,1.6,0.04,2.5,97.5,USDA NASS Crop Production Report (2023),USDA NASS and local Illinois soybean elevator benchmarks
+Sugarcane,India,Uttar Pradesh,3,15.0,31.0,16.0,51.61,48.39,UP Cane Development Department (2023),UP State Advised Price (SAP) for Sugarcane 2024-25
+Sugarcane,India,Maharashtra,5,40.0,33.0,7.0,21.21,78.79,Maharashtra Sugar Commissionerate,Maharashtra State Advised Price (SAP) guidelines for the current season
+Sugarcane,India,Uttar Pradesh,6,35.0,31.0,4.0,12.9,87.1,UP Cane Development Department (2023),FRP (Fair and Remunerative Price) 2024-25
+Sugarcane,India,Uttar Pradesh,9,40.0,31.0,9.0,29.03,70.97,UP Cane Development Department (2023),UP Sugarcane Cooperative Association / State Advised Price (SAP) benchmarks
+Sugarcane,India,Maharashtra,10,32.38,33.0,0.62,1.88,98.12,Maharashtra Sugar Commissionerate,Maharashtra State Sugarcane Development Corporation
+Sugarcane,India,Maharashtra,15,32.0,33.0,1.0,3.03,96.97,Maharashtra Sugar Commissionerate,FRP/State Sugar Commissioner Office benchmarks
+Tea,India,Assam,3,0.5,0.85,0.35,41.18,58.82,Tea Board of India Annual Statistics,Assam Tea Auction Market Benchmarks
+Tea,India,Assam,6,3.0,0.85,2.15,252.94,0.0,Tea Board of India Annual Statistics,Regional Green Leaf Market Benchmarks (Assam)
+Tea,India,Assam,9,1.0,0.85,0.15,17.65,82.35,Tea Board of India Annual Statistics,Assam Tea Auction Centre market price benchmarks
+Tomato,India,Karnataka,3,10.0,11.0,1.0,9.09,90.91,NHB India Horticulture Statistics,APMC Karnataka / Kolar Mandi Price Data
+Tomato,India,Maharashtra,5,30.0,12.0,18.0,150.0,0.0,NHB India Horticulture Statistics,APMC Nashik Market Benchmarks
+Tomato,India,Karnataka,6,20.0,11.0,9.0,81.82,18.18,NHB India Horticulture Statistics,Reflecting average APMC mandi prices for Karnataka specialty vegetable markets
+Tomato,India,Karnataka,9,20.0,11.0,9.0,81.82,18.18,NHB India Horticulture Statistics,Karnataka State Agricultural Marketing Board (KSAMB)
+Tomato,India,Maharashtra,10,22.0,12.0,10.0,83.33,16.67,NHB India Horticulture Statistics,APMC Nashik Mandi seasonal price benchmarks
+Tomato,India,Maharashtra,15,10.0,12.0,2.0,16.67,83.33,NHB India Horticulture Statistics,APMC Mandi (Nashik/Pune) price benchmarks
+Wheat,India,Haryana,3,2.1,1.9,0.2,10.53,89.47,Haryana Department of Agriculture (2023-24),"MSP 2024-25 (₹2,275 per quintal)"
+Wheat,USA,Kansas,3,1.44,1.35,0.09,6.67,93.33,USDA NASS Crop Production Report (2023),USDA National Agricultural Statistics Service (NASS) and Kansas grain market benchmarks
+Wheat,India,Punjab,5,2.3,2.0,0.3,15.0,85.0,India Ministry of Agriculture (2023-24),Ministry of Agriculture & Farmers Welfare (MSP 2024-25)
+Wheat,India,Haryana,6,2.0,1.9,0.1,5.26,94.74,Haryana Department of Agriculture (2023-24),CACP (Commission for Agricultural Costs and Prices) 2024-25 Wheat MSP
+Wheat,USA,Kansas,6,1.5,1.35,0.15,11.11,88.89,USDA NASS Crop Production Report (2023),CME Group Wheat Futures and Kansas State University Ag Extension cost data
+Wheat,India,Haryana,9,2.2,1.9,0.3,15.79,84.21,Haryana Department of Agriculture (2023-24),Government of India MSP 2024-25 (Wheat)
+Wheat,India,Punjab,10,2.2,2.0,0.2,10.0,90.0,India Ministry of Agriculture (2023-24),CACP/Punjab Mandi Board
+Wheat,India,Punjab,15,2.2,2.0,0.2,10.0,90.0,India Ministry of Agriculture (2023-24),"MSP 2024-25 (₹2,275/quintal) applied to 330 quintals"

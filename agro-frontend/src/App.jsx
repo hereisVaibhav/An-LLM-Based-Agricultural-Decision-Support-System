@@ -49,8 +49,16 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🌱 Agro <span className="highlight">AI</span></h1>
-        <p>Intelligent Agritech Assistant</p>
+        <h1 className="system-title">
+          An <span className="highlight">LLM-Based</span> Agricultural Decision-Support System
+        </h1>
+        <p className="system-subtitle">
+          Integrating Environmental Monitoring, Disease Diagnosis, and Economic Forecasting
+        </p>
+        <div className="author-badge">
+          <span className="badge-prefix">Developed by</span>
+          <span className="author-name">Vaibhav Shingade</span>
+        </div>
         
         <div className="tabs-container">
           <button 
